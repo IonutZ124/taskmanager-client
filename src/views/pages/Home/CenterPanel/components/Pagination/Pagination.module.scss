@@ -1,0 +1,24 @@
+$text-color: #666666;
+$secColor: #9189F8;
+
+.paginationContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    color: $text-color;
+    font-weight: 600;
+    .paginationButtons{
+        display: flex;
+        button{
+            margin: 1rem;
+            background-color: $secColor;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            font-weight: 600;
+            padding: .3rem .5rem;
+            cursor: pointer;
+        }
+    }
+}

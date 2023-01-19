@@ -1,0 +1,2 @@
+import TaskCommentsFakeInterfaceLoading from "./TaskCommentsFakeInterfaceLoading";
+export default TaskCommentsFakeInterfaceLoading;

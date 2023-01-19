@@ -1,0 +1,59 @@
+$mainColor: #F4F4F4;
+$secColor: #9189F8;
+$text-color: #666666;
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+}
+.mainPanel{
+    width: 90%;
+    height: 90%;
+    max-width: 80rem;
+    max-height: 47rem;
+    background-color: $mainColor;
+    opacity: 0.94;
+    border-radius: 15px;
+    -webkit-box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56); 
+    box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56);
+    overflow: hidden;
+    z-index: 1;
+}
+.panelHeader{
+    h1{
+        text-align: center;
+        color: $text-color;
+    }
+    border-bottom: .25rem solid #979797;
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
+
+.boards{
+    margin-top: 2.5rem;
+    margin-left: 2rem;
+    h2{
+        color: $text-color;
+        margin-left: 2rem;
+        margin-bottom: 2rem;
+    }
+    height: 80%;
+    overflow-y: auto;
+}
+.boardsContainer{
+    text-align: center;
+    margin-left: 2rem;
+    h3{
+        color: $text-color;
+        width: 100%;
+    }
+    margin-top: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    .boardComponent{
+        margin: 1rem 1.5rem;
+    }
+}

@@ -1,0 +1,32 @@
+$grayColor: #d5d5d5;
+@keyframes anim {
+    0%{
+        left: -10%;
+
+    }
+    100%{
+        left: 100%;
+    }
+}
+.container{
+    display: flex;
+    flex-direction: column;
+    margin-top: 1.5rem;
+}
+.fakeBoardMember{
+    position: relative;
+    margin-top: 1.5rem;
+    width: 30rem;
+    height: 2.3rem;
+    border-radius: 7px;
+    background-color: $grayColor;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 4rem;
+        height: 100%;
+        background: linear-gradient(to right, #d8d8d8 8%, #eaeaea 70%, rgb(220, 219, 219) 80%);
+        animation: anim 1s infinite;
+    }
+}

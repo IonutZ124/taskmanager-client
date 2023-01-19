@@ -1,0 +1,67 @@
+$mainColor: #F4F4F4;
+$secColor: #9189F8;
+$text-color: #666666;
+
+.statusComponent{
+    background-color: $secColor;
+    margin: 1rem;
+    min-width: 17rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    border-radius: 7px;
+    position: relative;
+
+    .deleteStatus{
+        position: absolute;
+        right: 4%;
+        margin-top: .5rem;
+        button{
+            background-color: rgb(194, 77, 77);
+            border: none;
+            color: white;
+            font-weight: 600;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+}
+.createTaskContainer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 7px;
+    background-color: $mainColor;
+ 
+    margin-bottom: 1rem;
+    width: 85%;
+    padding: 0.3rem 0;
+    input{
+        border: none;
+        background-color: $mainColor;
+        margin-right: .7rem;
+    }
+    input:focus{
+        outline: none;
+    }
+    button{
+        width: 2.5rem;
+        background-color: #8BC078;
+        border: none;
+        border-radius: 5px;
+        color: white;
+        font-weight: 600;
+        font-size: 1rem;
+        cursor: pointer;
+    }
+    button:hover{
+        transition: .2s;
+        transform: scale(1.05);
+        cursor: pointer;
+    }
+}
+.tasks{
+    width: 80%;  
+}

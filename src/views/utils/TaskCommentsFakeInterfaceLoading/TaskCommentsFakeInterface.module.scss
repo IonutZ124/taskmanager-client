@@ -1,0 +1,31 @@
+.container{
+    display: flex;
+    flex-direction: column;
+}
+@keyframes anim {
+    0%{
+        left: -10%;
+
+    }
+    100%{
+        left: 100%;
+    }
+}
+.fakeComment{
+    position: relative;
+    width: 50rem;
+    height: 7.2rem;
+    background-color: #e2e2e2;
+    margin-bottom: 1.5rem;
+    border-radius: 10px;
+    cursor: pointer;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 10rem;
+        height: 100%;
+        background: linear-gradient(to right, #dddddd 8%, #f0efef 70%, rgb(224, 223, 223) 80%);
+        animation: anim 1s infinite;
+    }
+}

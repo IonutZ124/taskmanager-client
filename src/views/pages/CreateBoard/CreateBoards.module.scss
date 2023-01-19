@@ -1,0 +1,102 @@
+$mainColor: #F4F4F4;
+$text-color: #666666;
+$secColor: #9189F8;
+
+.mainContainer{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    position: relative;
+}
+.container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mainPanel{
+    width: 90%;
+    height: 90%;
+    max-width: 80rem;
+    max-height: 47rem;
+    background-color: $mainColor;
+    opacity: 0.94;
+    border-radius: 15px;
+    -webkit-box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56); 
+    box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56);
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.joinBordContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: $mainColor;
+    width: 35rem;
+    height: 25rem;
+    border-radius: 15px;
+    opacity: 0.94;
+    box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56);
+    h2{
+        color: $text-color;
+    }
+}
+.createBoardForm{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.inputContainer{
+    display: flex;
+    width: 50%;
+    input{
+        border: none;
+        margin-left: 1rem;
+        background-color: white;
+        font-size: 1rem;
+        width: 100%;
+    }
+    input:focus{
+        outline: none;
+    }
+    padding: .6rem;
+    border: 1px solid $secColor;
+    margin: 1.5rem 0;
+    border-radius: 15px;
+    background-color: white;
+}
+.inputContainer:focus-within{
+    border: 2px solid $secColor;
+    transition: 0.3s;
+    transform: scale(1.05);
+}
+.btnContainer{
+    margin-top: 1rem;
+    display: flex;
+    justify-content: center;
+    button{
+        background-color: $secColor;
+        border: none;
+        border-radius: 10px;
+        padding: .8rem 2rem;
+        color: white;
+        font-weight: 600;
+        cursor: pointer;
+    }
+    button:hover{
+        transition: .2s;
+        transform: scale(1.05);
+    }
+}
+.appError{
+    margin-top: 0;
+    color: red;
+    font-weight: 600;
+}

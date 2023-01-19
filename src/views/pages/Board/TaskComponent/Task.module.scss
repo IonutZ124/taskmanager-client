@@ -1,0 +1,117 @@
+$mainColor: #F4F4F4;
+$text-color: #666666;
+
+.taskContainer{
+    position: relative;
+    background-color: $mainColor;
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    p{
+        margin-top: 2.5rem;
+    }
+    div:hover{
+       transition: .2s;
+       transform: scale(1.1);
+    }
+}
+.taskContainerInactive{
+    position: relative;
+    background-color: rgb(170, 238, 170);
+    color: $text-color;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 1rem 0;
+    border-radius: 10px;
+    padding: 1rem;
+    flex-direction: column;
+    margin-bottom: 2rem;
+    p{
+        margin-top: 2.5rem;
+    }
+}
+.openTaskPanel{
+    position: absolute;
+    top: 5%;
+    left: 5%;
+    margin-top: .5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    button{
+        text-align: center;
+        font-weight: 600;
+        background-color: #b0b0b3e1;
+        border: none;
+        color: white;
+        border-radius: 5px;
+        padding: 0.15rem .5rem;
+        cursor: pointer;
+    }
+    button:hover{
+        transition: .2s;
+        background-color: #7e7e7e;
+    }
+}
+.deleteTask{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+    button{
+        background-color: rgb(194, 77, 77);
+        border: none;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+}
+.archiveTask{
+    background-color: rgb(209, 108, 108);
+    border: none;
+    color: white;
+    font-weight: 600;
+    border-radius: 5px;
+    padding: .15rem .5rem;
+    cursor: pointer;
+}
+.openTaskComments{
+    position: absolute;
+    top: 12%;
+    right: 5%;
+    button{
+        background-color: #b0b0b3e1;
+        border: none;
+        padding: .3rem .7rem;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    button:hover{
+        transition: .2s;
+        background-color: #7e7e7e;
+    }
+}
+.openHistory{
+    position: absolute;
+    top: 12%;
+    right: 42%;
+    button{
+        background-color: #b0b0b3e1;
+        border: none;
+        padding: .3rem .7rem;
+        border-radius: 5px;
+        cursor: pointer;
+        color: rgb(255, 255, 255);
+    }
+    button:hover{
+        transition: .2s;
+        background-color: #7e7e7e;
+    }
+}

@@ -1,0 +1,145 @@
+$mainColor: #F4F4F4;
+$secColor: #9189F8;
+$grayColor: #d5d5d5;
+
+@keyframes anim {
+    0%{
+        left: -10%;
+
+    }
+    100%{
+        left: 100%;
+    }
+}
+.mainPanel{
+    height: 90%;
+    height: 44rem;
+    width: 13rem;
+    background-color: $mainColor;
+    opacity: 0.90;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    -webkit-box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56); 
+    box-shadow: -4px -1px 9px -1px rgba(0,0,0,0.56);
+    font-weight: 600;
+    position: relative;
+}
+.userSection{
+    display: flex;
+    align-items: center;
+    margin: 1.5rem 0;
+    border-bottom: 3px solid #979797;
+}
+.Usershape{
+    position: relative;
+    background-color: $grayColor;
+    width: 2rem;
+    height: 2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 1rem;
+        height: 100%;
+        background: linear-gradient(to right, #d8d8d8 8%, #eaeaea 70%, rgb(220, 219, 219) 80%);
+        animation: anim 1s infinite;
+    }
+}
+.shape{
+    position: relative;
+    background-color: $grayColor;
+    width: 1.2rem;
+    height: 1.2rem;
+    margin: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 5px;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 1rem;
+        height: 100%;
+        background: linear-gradient(to right, #d8d8d8 8%, #eaeaea 70%, rgb(220, 219, 219) 80%);
+        animation: anim 1s infinite;
+    }
+}
+.dialogHeader{
+    position: relative;
+    background-color: $grayColor;
+    margin-left: .5rem;
+    height: 1rem;
+    width: 7rem;
+    border-radius: 10px;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 1rem;
+        height: 100%;
+        background: linear-gradient(to right, #d8d8d8 8%, #eaeaea 70%, rgb(220, 219, 219) 80%);
+        animation: anim 1s infinite;
+    }
+}
+.dialog{
+    position: relative;
+    background-color: $grayColor;
+    margin-left: 1rem;
+    height: .6rem;
+    width: 7rem;
+    border-radius: 10px;
+    overflow: hidden;
+    span{
+        position: absolute;
+        left: -10%;
+        width: 3rem;
+        height: 100%;
+        background: linear-gradient(to right, #d8d8d8 8%, #eaeaea 70%, rgb(220, 219, 219) 80%);
+        animation: anim 1s infinite;
+    }
+}
+.navListContainer{
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-bottom: .8rem;
+    cursor: pointer;
+}
+.notificationBellContainer{
+    position: absolute;
+    right: 7%;
+    top: 2%;
+    width: 3rem;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #97979747;
+    cursor: pointer;
+}
+.notificationBellContainer:hover{
+    background-color: #807f7f47;
+}
+.notify{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+.bellNotification{
+    background-color: red;
+    width: .5rem;
+    height: .5rem;
+    border-radius: 50%;
+    position: absolute;
+    top: 10%;
+    left: 10%;
+}

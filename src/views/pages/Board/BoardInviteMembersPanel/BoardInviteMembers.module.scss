@@ -1,0 +1,97 @@
+$mainColor: #F4F4F4;
+$secColor: #9189F8;
+$text-color: #666666;
+
+.mainContainer{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(82, 82, 82, 0.644);
+}
+.boardInviteMembersPanel{
+    position: relative;
+    width: 30rem;
+    height: 25rem;
+    border-radius: 10px;
+    background-color: $mainColor;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: white;
+    .closeTab{
+        right: 3%;
+        top: 2%;
+        position: absolute;
+        button{
+            background-color: rgb(228, 109, 109);
+            border: none;
+            color: white;
+            padding: 0.2rem .8rem;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+    }
+    .content{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 80%;
+        .panelHeader{
+            color: $text-color;
+            margin-top: 1.5rem;
+        }
+        .inviteUserContainer{
+            margin-top: 1rem;
+            background-color: #cfcfd3;
+            height: 3rem;
+            width: 20rem;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 5px;
+            input{
+                background-color: #cfcfd3;
+                border: none;
+            }
+            input:focus{
+                outline: none;
+            }
+            button{
+                margin-left: .5rem;
+                background-color: #8BC078;
+                border: none;
+                color: white;
+                padding: .3rem .5rem;
+                font-weight: 600;
+                border-radius: 5px;
+                cursor: pointer;
+            }
+            button:hover{
+                transition: .2s;
+                background-color: #79a36a;
+            }
+        }
+        .inviteUserContainer:focus-within{
+            transition: .2s;
+            border: 1px solid rgb(26, 151, 26);
+        }
+        .anno{
+            color: $text-color;
+            margin-top: 2rem;
+            p{
+                margin: 0;
+            }
+        }
+    }
+    .appMsg{
+        color: $text-color;
+        margin-top: 1.8rem;
+        margin-bottom: 0;
+        font-weight: 600;
+    }
+}
