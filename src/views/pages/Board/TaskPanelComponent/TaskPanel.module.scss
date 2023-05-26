@@ -1,230 +1,230 @@
-$mainColor: #F4F4F4;
-$secColor: #9189F8;
+$mainColor: #f4f4f4;
+$secColor: #9189f8;
 $text-color: #666666;
 
-.mainContainer{
+.mainContainer {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: rgba(82, 82, 82, 0.644);
+}
+.taskPanel {
+  position: relative;
+  width: 65rem;
+  height: 90%;
+  border-radius: 10px;
+  background-color: $mainColor;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: white;
+  .closeTab {
+    right: 3%;
+    top: 2%;
     position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0%;
+    button {
+      background-color: rgb(228, 109, 109);
+      border: none;
+      color: white;
+      padding: 0.2rem 0.8rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .panelHeader {
+    color: $text-color;
+  }
+  .assignUserContainer {
+    background-color: rgb(218, 218, 218);
+    width: 20rem;
+    height: 3rem;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(82, 82, 82, 0.644);
-}
-.taskPanel{
-    position: relative;
-    width: 65rem;
-    height: 40rem;
     border-radius: 10px;
-    background-color: $mainColor;
+    margin-top: 1.5rem;
+
+    input {
+      width: 75%;
+      height: 80%;
+      border: none;
+      background-color: rgb(218, 218, 218);
+      text-align: center;
+    }
+    input:focus {
+      outline: none;
+    }
+    button {
+      margin-left: 0.5rem;
+      background-color: #8bc078;
+      border: none;
+      color: white;
+      font-weight: 600;
+      padding: 0.3rem;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .assignedUsersContainer {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    color: white;
-    .closeTab{
-        right: 3%;
-        top: 2%;
-        position: absolute;
-        button{
-            background-color: rgb(228, 109, 109);
-            border: none;
-            color: white;
-            padding: 0.2rem .8rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    }
-    .panelHeader{
-        color: $text-color;
-    }
-    .assignUserContainer{
-        background-color: rgb(218, 218, 218);
-        width: 20rem;
-        height: 3rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 10px;
-        margin-top: 1.5rem;
-    
-        input{
-            width: 75%;
-            height: 80%;
-            border: none;
-            background-color: rgb(218, 218, 218);
-            text-align: center;
-        }
-        input:focus{
-            outline: none;
-        }
-        button{
-            margin-left: .5rem;
-            background-color: #8BC078;
-            border: none;
-            color: white;
-            font-weight: 600;
-            padding: .3rem;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    }
-    .assignedUsersContainer{
-        display: flex;
-        align-items: center;
-        flex-direction: column;
-        color: $text-color;
-        margin-top: 1rem;
-        width: 80%;
-        height: 23rem;
-    }
-}
-.assignUserContainer:focus-within{
-    transition: .2s;
-    border: 1px solid rgb(26, 151, 26);
-} 
-.appError{
-    margin: 0;
+    flex-direction: column;
     color: $text-color;
-    margin-top: .5rem;
-    color: red;
-}
-.isTaskActiveContainer{
-    display: flex;
-    align-items: center;
-    width: 98%;
- 
-    margin-top: .5rem;
-    border-radius: 5px;
-    p{
-        font-weight: 600;
-    }
-    .taskStatus{
-        background-color: #8BC078;
-        padding: 0 .3rem;
-        height: 2rem;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        border-radius: 5px;
-        margin-left: .5rem;
-    }
-    button{
-        margin: .5rem;
-    }
-    .taskStatusButtons{
-        margin-left: .5rem;
-        button{
-            border: none;
-            background-color: #666666;
-            color: white;
-            padding: .4rem .3rem;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-        }
-    }
-    .archiveTask{
-         button{
-            background-color: rgb(194, 77, 77);
-            padding: .5rem;
-            border: none;
-            color: white;
-            font-weight: 600;
-            border-radius: 5px;
-            cursor: pointer;
-         }
-    }
-}
-.usersMainContainer{
-    display: flex;
-    flex-direction: column;
+    margin-top: 1rem;
     width: 80%;
-    height: 80%;
-    padding: 0 .5rem;
-    overflow-y: auto;
-    .user{
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
- 
-        border-bottom: 1px solid $text-color;
-        div{
-            background-color: #8BC078;
-            border-radius: 5px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 2rem;
-            width: 5rem;
-            p{
-                color: white;
-                font-weight: 600;
-            }
-        }
-        margin: .5rem;
-    }
+    height: 23rem;
+  }
 }
-.loading{
-    height: 100%;
+.assignUserContainer:focus-within {
+  transition: 0.2s;
+  border: 1px solid rgb(26, 151, 26);
+}
+.appError {
+  margin: 0;
+  color: $text-color;
+  margin-top: 0.5rem;
+  color: red;
+}
+.isTaskActiveContainer {
+  display: flex;
+  align-items: center;
+  width: 98%;
+
+  margin-top: 0.5rem;
+  border-radius: 5px;
+  p {
+    font-weight: 600;
+  }
+  .taskStatus {
+    background-color: #8bc078;
+    padding: 0 0.3rem;
+    height: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+  }
+  button {
+    margin: 0.5rem;
+  }
+  .taskStatusButtons {
+    margin-left: 0.5rem;
+    button {
+      border: none;
+      background-color: #666666;
+      color: white;
+      padding: 0.4rem 0.3rem;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
+  .archiveTask {
+    button {
+      background-color: rgb(194, 77, 77);
+      padding: 0.5rem;
+      border: none;
+      color: white;
+      font-weight: 600;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+  }
 }
-.paginate{
-    color: $text-color;
+.usersMainContainer {
+  display: flex;
+  flex-direction: column;
+  width: 80%;
+  height: 80%;
+  padding: 0 0.5rem;
+  overflow-y: auto;
+  .user {
     display: flex;
-    flex-direction: column;
+    justify-content: space-between;
     align-items: center;
-    width: 50%;
-    font-weight: 600;
-    p{
-        margin: 0;
-        margin-bottom: .5rem;
+
+    border-bottom: 1px solid $text-color;
+    div {
+      background-color: #8bc078;
+      border-radius: 5px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 2rem;
+      width: 5rem;
+      p {
+        color: white;
+        font-weight: 600;
+      }
     }
-    .paginateBtns{
-        display: flex;
-        button{
-            background-color: $secColor;
-            border: none;
-            color: white;
-            padding: .3rem .5rem;
-            border-radius: 5px;
-            cursor: pointer;
-            margin: 0 .5rem;
-        }
-    }
+    margin: 0.5rem;
+  }
 }
-.noContent{
-    height: 80%;
+.loading {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.paginate {
+  color: $text-color;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 50%;
+  font-weight: 600;
+  p {
+    margin: 0;
+    margin-bottom: 0.5rem;
+  }
+  .paginateBtns {
     display: flex;
-    align-items: center;
-    justify-content: center;
+    button {
+      background-color: $secColor;
+      border: none;
+      color: white;
+      padding: 0.3rem 0.5rem;
+      border-radius: 5px;
+      cursor: pointer;
+      margin: 0 0.5rem;
+    }
+  }
+}
+.noContent {
+  height: 80%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 600;
+}
+.delete {
+  button {
+    background-color: rgb(194, 77, 77);
+    border: none;
+    padding: 0.5rem 1rem;
     font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-left: 0.5rem;
+  }
 }
-.delete{
-    button{
-        background-color: rgb(194, 77, 77);
-        border: none;
-        padding: .5rem 1rem;
-        font-weight: 600;
-        color: white;
-        cursor: pointer;
-        border-radius: 5px;
-        margin-left: .5rem;
-    }
-}
-.deleteTask{
-    position: absolute;
-    top: 13%;
-    left: 4%;
-    button{
-        background-color: rgb(194, 77, 77);
-        border: none;
-        padding: .5rem 1rem;
-        font-weight: 600;
-        color: white;
-        cursor: pointer;
-        border-radius: 5px;
-    }
+.deleteTask {
+  position: absolute;
+  top: 13%;
+  left: 4%;
+  button {
+    background-color: rgb(194, 77, 77);
+    border: none;
+    padding: 0.5rem 1rem;
+    font-weight: 600;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
 }
